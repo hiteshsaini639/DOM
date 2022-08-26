@@ -22,22 +22,36 @@
 // headerTitle.innerHTML='<h3>HELLO</h3>';
 
 
-
+//getElementById
 let header= document.getElementById('main-header');
 let title=document.querySelectorAll('.title');
 header.style.borderBottom='solid 3px #000';
 title[0].style.color='green';
 title[0].style.fontWeight='bold'
 
-let items=document.getElementsByClassName('list-group-item');
-console.log(items);
-console.log(items[1]);
-items[1].textContent="Hello 2";
-//items[1].style.fontWeight='bold';
-items[1].style.backgroundColor="yellow";
-items[2].style.backgroundColor="green";
+//getElementsByClassName
+// let items=document.getElementsByClassName('list-group-item');
+// console.log(items);
+// console.log(items[1]);
+// items[1].textContent="Hello 2";
+// //items[1].style.fontWeight='bold';
+// items[1].style.backgroundColor="yellow";
+// items[2].style.backgroundColor="green";
 
-for(let i=0;i<items.length;i++){
-    items[i].style.fontWeight='bold';
+// for(let i=0;i<items.length;i++){
+//     items[i].style.fontWeight='bold';
+// }
+
+// getElementsBytagName
+let li=document.getElementsByTagName('li');
+console.log(li);
+console.log(li[1]);
+li[1].textContent="Hello 2";
+//li[1].style.fontWeight='bold';
+li[1].style.backgroundColor="yellow";
+li[2].style.backgroundColor="green";
+
+for(let i=0;i<li.length;i++){
+    li[i].style.fontWeight='bold';
 }
 
