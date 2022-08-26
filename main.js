@@ -23,11 +23,11 @@
 
 
 //getElementById
-let header= document.getElementById('main-header');
-let title=document.querySelectorAll('.title');
-header.style.borderBottom='solid 3px #000';
-title[0].style.color='green';
-title[0].style.fontWeight='bold'
+// let header= document.getElementById('main-header');
+// let title=document.querySelectorAll('.title');
+// header.style.borderBottom='solid 3px #000';
+// title[0].style.color='green';
+// title[0].style.fontWeight='bold'
 
 //getElementsByClassName
 // let items=document.getElementsByClassName('list-group-item');
@@ -43,15 +43,52 @@ title[0].style.fontWeight='bold'
 // }
 
 // getElementsBytagName
-let li=document.getElementsByTagName('li');
-console.log(li);
-console.log(li[1]);
-li[1].textContent="Hello 2";
-//li[1].style.fontWeight='bold';
-li[1].style.backgroundColor="yellow";
-li[2].style.backgroundColor="green";
+// let li=document.getElementsByTagName('li');
+// console.log(li);
+// console.log(li[1]);
+// li[1].textContent="Hello 2";
+// //li[1].style.fontWeight='bold';
+// li[1].style.backgroundColor="yellow";
+// li[2].style.backgroundColor="green";
 
-for(let i=0;i<li.length;i++){
-    li[i].style.fontWeight='bold';
+// for(let i=0;i<li.length;i++){
+//     li[i].style.fontWeight='bold';
+// }
+
+//querySelector
+let header=document.querySelector('#main-header');
+header.style.borderBottom='solid 4px #ccc';
+
+let input=document.querySelector('input');
+input.value='Hello world';
+
+let submit=document.querySelector('input[type="submit"]');
+submit.value="SEND";
+
+let item=document.querySelector('.list-group-item');
+item.style.color='red';
+
+let lastItem=document.querySelector('.list-group-item:last-child');
+lastItem.style.color='blue';
+
+
+// 1
+// let secondItem=document.querySelector('.list-group-item:nth-child(2)');
+// secondItem.style.background='green';
+// // 2
+// let thirdItem=document.querySelector('.list-group-item:nth-child(3)');
+// thirdItem.style.visibility= 'hidden';
+
+//querySelectorAll
+let title=document.querySelectorAll('.title');
+title[0].textContent="Hello";
+
+// 1
+title[1].style.color="green";
+
+// 2
+let odd=document.querySelectorAll('li:nth-child(odd)');
+
+for(let i=0;i<odd.length;i++){
+    odd[i].style.background="lightgreen";
 }
-
