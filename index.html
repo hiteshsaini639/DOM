@@ -22,16 +22,37 @@
   <div class="container">
    <div id="main" class="card card-body">
     <h2 class="title">Add Items</h2>
-    <form id="addForm" class="form-inline mb-3">
-      <input type="text" class="form-control mr-2" id="item">
-      <input type="submit" class="btn btn-dark" value="Submit">
+    <form id="addForm">
+      <div class="row mb-3">
+        <label for="item" class="col-sm-2 col-form-label">Item Name</label>
+        <div class="col-sm-10">
+          <input required type="text" class="form-control"  id="item" placeholder="Item Name">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="description" class="col-sm-2 col-form-label">Item Description</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="description" placeholder="Item descrption">
+        </div>
+      </div>
+      <div class="col-md-12 text-center">
+      <input type="submit" class="btn btn-dark col-3" value="Submit">
+    </div>
     </form>
     <h2 class="title">Items</h2>
     <ul id="items" class="list-group">
+      <div class="item-description">
       <li class="list-group-item">Item 1 <button class="btn btn-danger btn-sm float-right delete">X</button><button class="btn btn-warning btn-sm float-right edit">Edit</button></li>
+      <li class="list-group-item list-group-item-light">Description 1 </li>
+    </div>
+    <div class="item-description">
       <li class="list-group-item">Item 2 <button class="btn btn-danger btn-sm float-right delete">X</button><button class="btn btn-warning btn-sm float-right edit">Edit</button></li>
+      <li class="list-group-item list-group-item-light">Description 2 </li>
+    </div>
+    <div class="item-description">
       <li class="list-group-item">Item 3 <button class="btn btn-danger btn-sm float-right delete">X</button><button class="btn btn-warning btn-sm float-right edit">Edit</button></li>
-      <li class="list-group-item">Item 4 <button class="btn btn-danger btn-sm float-right delete">X</button><button class="btn btn-warning btn-sm float-right edit">Edit</button></li>
+      <li class="list-group-item list-group-item-light">Description 3 </li>
+    </div>
     </ul>
    </div>
   </div>
